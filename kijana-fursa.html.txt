@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kijana Fursa</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f6fb;--surface:#fff;--ink:#16163a;--muted:#5b5d7a;--line:#dcdeee;--brand:#2e2a7a;--brand-ink:#fff;--sun:#f4b400;--ok:#17754b;--warn-bg:#fff4d6;--warn-ink:#5a4200;--soon:#b3261e;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10112a;--surface:#1a1b3d;--ink:#eef0ff;--muted:#a9abcc;--line:#33356a;--brand:#9d9bff;--brand-ink:#10112a;--sun:#f4b400;--ok:#58d49b;--warn-bg:#3a2f0b;--warn-ink:#ffe39a;--soon:#ff8a80}}
+:root[data-theme="dark"]{--bg:#10112a;--surface:#1a1b3d;--ink:#eef0ff;--muted:#a9abcc;--line:#33356a;--brand:#9d9bff;--brand-ink:#10112a;--ok:#58d49b;--warn-bg:#3a2f0b;--warn-ink:#ffe39a;--soon:#ff8a80}
+html{scroll-padding-top:env(safe-area-inset-top,0px);color-scheme:light dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Figtree,system-ui,sans-serif;line-height:1.5;font-size:16px}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header{padding:28px 0 8px}
+.logo{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:800;font-size:1.1rem;color:var(--brand)}
+.logo span{background:var(--sun);color:#16163a;padding:0 6px;border-radius:4px;margin-left:2px}
+h1{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:800;font-size:clamp(2rem,8vw,3.2rem);line-height:1.05;margin:16px 0 10px;letter-spacing:-.02em}
+.lead{color:var(--muted);margin:0 0 18px;max-width:52ch}
+.warn{background:var(--warn-bg);color:var(--warn-ink);border-left:4px solid var(--sun);padding:10px 12px;border-radius:6px;font-size:.92rem;margin:0 0 18px}
+.search{display:flex;gap:8px;margin-bottom:12px}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--surface);border:1.5px solid var(--line);border-radius:10px;padding:12px;width:100%}
+input:focus,select:focus,textarea:focus,button:focus-visible{outline:3px solid var(--sun);outline-offset:1px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:10px}
+.chip{flex:none;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:8px 14px;font:inherit;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--brand);color:var(--brand-ink);border-color:var(--brand)}
+.row{display:flex;gap:8px;margin-bottom:16px}
+.tabs{display:flex;gap:18px;border-bottom:1.5px solid var(--line);margin-bottom:14px}
+.tab{background:none;border:0;border-bottom:3px solid transparent;padding:10px 0;font:inherit;font-weight:600;color:var(--muted);cursor:pointer}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--sun)}
+.count{color:var(--muted);font-size:.9rem;margin:0 0 10px}
+.card{background:var(--surface);border:1.5px solid var(--line);border-radius:12px;padding:14px;margin-bottom:12px}
+.card h3{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:1.15rem;margin:0 0 4px;line-height:1.25}
+.meta{color:var(--muted);font-size:.9rem;margin:0 0 8px}
+.tag{display:inline-block;font-size:.8rem;font-weight:600;border-radius:6px;padding:2px 8px;background:var(--line);margin-right:6px}
+.tag.ok{color:var(--ok)}
+.dl{font-weight:600;font-size:.92rem}
+.dl.soon{color:var(--soon)}
+.dl.past{color:var(--muted);text-decoration:line-through}
+details{margin-top:8px}
+summary{cursor:pointer;color:var(--brand);font-weight:600}
+details p{margin:8px 0 0}
+.save{margin-top:10px;border:1.5px solid var(--brand);background:transparent;color:var(--brand);border-radius:8px;padding:8px 14px;font:inherit;font-weight:600;cursor:pointer}
+.save[aria-pressed="true"]{background:var(--brand);color:var(--brand-ink)}
+.empty{text-align:center;color:var(--muted);padding:28px 8px}
+section.submit{margin:32px 0;padding:18px;background:var(--surface);border:1.5px solid var(--line);border-radius:12px}
+section.submit h2{font-family:'Bricolage Grotesque',system-ui,sans-serif;margin:0 0 6px}
+label{display:block;font-weight:600;margin:12px 0 4px}
+.btn{margin-top:14px;background:var(--brand);color:var(--brand-ink);border:0;border-radius:10px;padding:12px 18px;font:inherit;font-weight:600;cursor:pointer}
+.msg{margin-top:12px;color:var(--ok);font-weight:600}
+footer{padding:8px 0 40px;color:var(--muted);font-size:.88rem}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div class="logo">Kijana<span>Fursa</span></div>
+<h1>Fursa zako zote, mahali pamoja.</h1>
+<p class="lead">Masomo, kazi, mikopo na mafunzo kwa vijana wa Tanzania. Tafuta, hifadhi, na omba kabla muda haujaisha.</p>
+</header>
+
+<p class="warn"><strong>Tahadhari:</strong> Usilipe pesa ili kupata kazi au scholarship. Fursa za kweli hazitozi ada ya kuomba. Orodha hapa chini ni data ya mfano kwa majaribio; thibitisha kila fursa kwenye chanzo rasmi.</p>
+
+<div class="search"><input id="q" type="search" placeholder="Tafuta fursa, mfano: internship" aria-label="Tafuta fursa"></div>
+<div class="chips" id="chips" role="group" aria-label="Aina ya fursa"></div>
+<div class="row"><select id="reg" aria-label="Mkoa"></select></div>
+
+<div class="tabs" role="tablist">
+<button class="tab" role="tab" id="t-all" aria-selected="true">Zote</button>
+<button class="tab" role="tab" id="t-saved" aria-selected="false">Zilizohifadhiwa (<span id="sc">0</span>)</button>
+</div>
+<p class="count" id="count"></p>
+<div id="list"></div>
+
+<section class="submit" id="tuma">
+<h2>Una fursa ya kushiriki?</h2>
+<p class="meta">Tuma fursa unayoijua. Tutahakiki chanzo chake kabla ya kuichapisha.</p>
+<form id="f" onsubmit="return false">
+<label for="f-t">Jina la fursa</label><input id="f-t" required>
+<label for="f-s">Chanzo rasmi (tovuti au taasisi)</label><input id="f-s" required>
+<label for="f-d">Maelezo mafupi</label><textarea id="f-d" rows="3"></textarea>
+<button class="btn" id="send" type="button">Tuma fursa</button>
+<div class="msg" id="msg" role="status"></div>
+</form>
+</section>
+
+<footer>Kijana Fursa: toleo la mfano. Fursa zinazoonyeshwa ni za majaribio. Wasiliana nasi: <a href="mailto:eliakimunyajilali@gmail.com">eliakimunyajilali@gmail.com</a></footer>
+</div>
+
+<script>
+var OPPS=[
+{id:1,t:"Mikopo ya Elimu ya Juu",src:"HESLB",cat:"Masomo",reg:"Nchi nzima",d:"2026-12-20",desc:"Mkopo kwa wanafunzi wanaojiunga na vyuo vikuu. Hitaji: cheti cha kuzaliwa, matokeo ya kidato cha sita na barua ya udahili."},
+{id:2,t:"Mafunzo ya Ufundi Stadi",src:"VETA",cat:"Mafunzo",reg:"Nchi nzima",d:"2026-11-30",desc:"Kozi fupi za ushonaji, umeme, ufundi magari na upishi. Wasiliana na chuo cha VETA kilicho karibu nawe."},
+{id:3,t:"Mkopo wa Vijana wa Halmashauri",src:"Halmashauri ya Jiji",cat:"Mikopo",reg:"Dar es Salaam",d:"2026-12-05",desc:"Mkopo bila riba kwa vikundi vya vijana vilivyosajiliwa. Hitaji: kikundi chenye wanachama wasiopungua watano na mpango wa biashara."},
+{id:4,t:"Internship kwa Wahitimu",src:"Kampuni binafsi",cat:"Ajira",reg:"Dar es Salaam",d:"2026-11-15",desc:"Nafasi za mafunzo kwa vitendo kwa wahitimu wa biashara na TEHAMA. Tuma wasifu (CV) na barua ya maombi."},
+{id:5,t:"Mashindano ya Mawazo ya Biashara",src:"Taasisi ya wajasiriamali",cat:"Mikopo",reg:"Nchi nzima",d:"2027-01-10",desc:"Wazo bora la biashara hupata ruzuku ya mtaji na ushauri wa miezi sita."},
+{id:6,t:"Scholarship ya Shahada ya Uzamili",src:"Taasisi ya kimataifa",cat:"Masomo",reg:"Nchi nzima",d:"2027-02-01",desc:"Ufadhili kamili wa masomo ya uzamili nje ya nchi. Hitaji: shahada ya kwanza na barua mbili za mapendekezo."},
+{id:7,t:"Kazi ya Muda: Mbunifu wa Picha",src:"Wakala wa matangazo",cat:"Ajira",reg:"Arusha",d:"2026-11-20",desc:"Kazi za muda za kubuni mabango na mitandao ya kijamii. Tuma mifano ya kazi zako."},
+{id:8,t:"Semina ya Bure ya Ujasiriamali",src:"Kituo cha vijana",cat:"Mafunzo",reg:"Mwanza",d:"2026-11-12",desc:"Siku mbili za mafunzo ya kuanzisha biashara, kutunza hesabu na kusajili biashara."},
+{id:9,t:"Tenda ya Usambazaji wa Vifaa vya Ofisi",src:"Taasisi ya umma",cat:"Tenda",reg:"Dodoma",d:"2026-12-01",desc:"Biashara ndogo zilizosajiliwa zinaalikwa kuomba. Hitaji: leseni ya biashara na TIN."},
+{id:10,t:"Ruzuku kwa Vijana Wakulima",src:"Mradi wa kilimo",cat:"Mikopo",reg:"Mbeya",d:"2026-12-18",desc:"Ruzuku ya pembejeo na mafunzo ya kilimo cha kisasa kwa vijana wa miaka 18 hadi 35."},
+{id:11,t:"Mafunzo ya Ujuzi wa Kidijitali",src:"Taasisi ya TEHAMA",cat:"Mafunzo",reg:"Nchi nzima",d:"2026-12-10",desc:"Mafunzo ya mtandaoni ya kutumia kompyuta, mitandao ya kijamii kwa biashara na malipo ya simu."},
+{id:12,t:"Ualimu wa Kujitolea",src:"Shirika lisilo la kiserikali",cat:"Ajira",reg:"Morogoro",d:"2026-11-25",desc:"Kujitolea kufundisha shule za msingi kwa miezi sita, na posho ya usafiri."}
+];
+var CATS=["Zote","Masomo","Ajira","Mikopo","Mafunzo","Tenda"];
+var cat="Zote",tab="all",saved=[];
+try{saved=JSON.parse(localStorage.getItem("kf_saved")||"[]")}catch(e){saved=[]}
+function persist(){try{localStorage.setItem("kf_saved",JSON.stringify(saved))}catch(e){}}
+var $=function(i){return document.getElementById(i)};
+var regs=["Mikoa yote"].concat(Array.from(new Set(OPPS.map(function(o){return o.reg}))).sort());
+$("reg").innerHTML=regs.map(function(r){return "<option>"+r+"</option>"}).join("");
+function chips(){$("chips").innerHTML=CATS.map(function(c){return '<button class="chip" aria-pressed="'+(c===cat)+'" data-c="'+c+'">'+c+'</button>'}).join("")}
+function days(d){var t=new Date();t.setHours(0,0,0,0);return Math.round((new Date(d+"T00:00:00")-t)/86400000)}
+function dl(d){var n=days(d);var f=new Date(d+"T00:00:00").toLocaleDateString("sw-TZ",{day:"numeric",month:"long",year:"numeric"});
+if(n<0)return '<span class="dl past">Imeisha '+f+'</span>';
+if(n===0)return '<span class="dl soon">Inaisha leo</span>';
+return '<span class="dl'+(n<=14?' soon':'')+'">Mwisho: '+f+' (siku '+n+')</span>'}
+function render(){
+var q=$("q").value.toLowerCase().trim(),r=$("reg").value;
+var list=OPPS.filter(function(o){
+if(tab==="saved"&&saved.indexOf(o.id)<0)return false;
+if(cat!=="Zote"&&o.cat!==cat)return false;
+if(r!=="Mikoa yote"&&o.reg!==r&&o.reg!=="Nchi nzima")return false;
+if(q&&(o.t+" "+o.src+" "+o.desc+" "+o.cat).toLowerCase().indexOf(q)<0)return false;
+return true}).sort(function(a,b){var x=days(a.d),y=days(b.d);if(x<0&&y>=0)return 1;if(y<0&&x>=0)return -1;return x-y});
+$("sc").textContent=saved.length;
+$("count").textContent="Fursa "+list.length+(list.length?", zinazoisha karibuni zikiwa juu":"");
+if(!list.length){$("list").innerHTML='<div class="empty">'+(tab==="saved"?"Bado hujahifadhi fursa yoyote. Bonyeza Hifadhi kwenye fursa unayopenda.":"Hakuna fursa zinazolingana. Jaribu kuondoa kichujio.")+'</div>';return}
+$("list").innerHTML=list.map(function(o){var s=saved.indexOf(o.id)>=0;
+return '<article class="card"><h3>'+o.t+'</h3><p class="meta"><span class="tag">'+o.cat+'</span><span class="tag">'+o.reg+'</span>'+o.src+'</p>'+dl(o.d)+
+'<details><summary>Maelezo na jinsi ya kuomba</summary><p>'+o.desc+'</p><p class="meta">Mfano wa majaribio. Thibitisha kwenye chanzo rasmi kabla ya kuomba, na usilipe pesa.</p></details>'+
+'<button class="save" data-id="'+o.id+'" aria-pressed="'+s+'">'+(s?"Imehifadhiwa":"Hifadhi")+'</button></article>'}).join("")}
+$("chips").addEventListener("click",function(e){var c=e.target.getAttribute("data-c");if(c){cat=c;chips();render()}});
+$("list").addEventListener("click",function(e){var id=+e.target.getAttribute("data-id");if(!id)return;var i=saved.indexOf(id);if(i>=0)saved.splice(i,1);else saved.push(id);persist();render()});
+$("q").addEventListener("input",render);$("reg").addEventListener("change",render);
+function setTab(t){tab=t;$("t-all").setAttribute("aria-selected",t==="all");$("t-saved").setAttribute("aria-selected",t==="saved");render()}
+$("t-all").onclick=function(){setTab("all")};$("t-saved").onclick=function(){setTab("saved")};
+$("send").onclick=function(){if(!$("f-t").value.trim()||!$("f-s").value.trim()){$("msg").style.color="var(--soon)";$("msg").textContent="Jaza jina la fursa na chanzo rasmi.";return}
+var body="Jina la fursa: "+$("f-t").value.trim()+"\nChanzo rasmi: "+$("f-s").value.trim()+"\nMaelezo: "+$("f-d").value.trim();
+var href="mailto:eliakimunyajilali@gmail.com?subject="+encodeURIComponent("Fursa mpya: "+$("f-t").value.trim())+"&body="+encodeURIComponent(body);
+$("msg").style.color="var(--ok)";$("msg").innerHTML='Tayari. <a href="'+href+'" target="_blank" rel="noopener">Bonyeza hapa kutuma kwa barua pepe</a>'};
+chips();render();
+</script>
+</body>
+</html>
