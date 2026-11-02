@@ -3,7 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Kijana Fursa</title>
+<title>Kijana Fursa - Fursa za vijana wa Tanzania</title>
+<meta name="description" content="Fursa za masomo, ajira, mikopo na mafunzo kwa vijana wa Tanzania.">
+<meta name="theme-color" content="#2e2a7a">
+<link rel="canonical" href="https://eliakimunyajilali-ai.github.io/kijanafursa/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kijana Fursa">
+<meta property="og:title" content="Kijana Fursa - Fursa za vijana wa Tanzania">
+<meta property="og:description" content="Masomo, ajira, mikopo na mafunzo kwa vijana wa Tanzania mahali pamoja.">
+<meta property="og:url" content="https://eliakimunyajilali-ai.github.io/kijanafursa/">
+<meta property="og:image" content="https://eliakimunyajilali-ai.github.io/kijanafursa/icon-512.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Kijana Fursa","alternateName":"KijanaFursa","url":"https://eliakimunyajilali-ai.github.io/kijanafursa/","inLanguage":"sw"}</script>
+
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#f5f6fb;--surface:#fff;--ink:#16163a;--muted:#5b5d7a;--line:#dcdeee;--brand:#2e2a7a;--brand-ink:#fff;--sun:#f4b400;--ok:#17754b;--warn-bg:#fff4d6;--warn-ink:#5a4200;--soon:#b3261e;
@@ -52,12 +66,27 @@ label{display:block;font-weight:600;margin:12px 0 4px}
 .msg{margin-top:12px;color:var(--ok);font-weight:600}
 footer{padding:8px 0 40px;color:var(--muted);font-size:.88rem}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+.nav{display:flex;gap:16px;margin-top:6px;font-weight:600}.nav a{color:var(--brand);text-decoration:none}
+.ads{margin:32px 0}.ads h2{font-family:'Bricolage Grotesque',system-ui,sans-serif;margin:0 0 6px}
+.plans{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin:14px 0}
+.plan{background:var(--surface);border:1.5px solid var(--line);border-radius:12px;padding:14px}
+.plan.top{border:2.5px solid var(--sun)}
+.plan h3{margin:0 0 4px;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:1.05rem}
+.price{font-size:1.5rem;font-weight:800;font-family:'Bricolage Grotesque',system-ui,sans-serif;color:var(--brand)}
+.price small{font-size:.8rem;font-weight:400;color:var(--muted)}
+.plan ul{padding-left:18px;margin:8px 0 0;color:var(--muted);font-size:.92rem}
+.contact{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.cbtn{display:inline-block;text-decoration:none;font-weight:600;border-radius:10px;padding:11px 16px}
+.cbtn.wa{background:#1f7a46;color:#fff}.cbtn.ph{border:1.5px solid var(--brand);color:var(--brand)}
+.share{display:inline-block;margin:10px 0 0 8px;color:var(--ok);font-weight:600;text-decoration:none;border:1.5px solid var(--ok);border-radius:8px;padding:8px 14px}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:#1f7a46;color:#fff;text-decoration:none;font-weight:600;border-radius:999px;padding:12px 18px;box-shadow:0 4px 14px rgba(0,0,0,.25);z-index:5}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header>
 <div class="logo">Kijana<span>Fursa</span></div>
+<nav class="nav"><a href="#tangaza">Tangaza Nasi</a><a href="#tuma">Tuma Fursa</a><a href="#" id="inst" hidden>Weka kwenye simu</a></nav>
 <h1>Fursa zako zote, mahali pamoja.</h1>
 <p class="lead">Masomo, kazi, mikopo na mafunzo kwa vijana wa Tanzania. Tafuta, hifadhi, na omba kabla muda haujaisha.</p>
 </header>
@@ -75,6 +104,24 @@ footer{padding:8px 0 40px;color:var(--muted);font-size:.88rem}
 <p class="count" id="count"></p>
 <div id="list"></div>
 
+<section class="ads" id="tangaza">
+<h2>Tangaza Nasi</h2>
+<p class="meta">Fikia vijana wanaotafuta masomo, kazi, mikopo na mafunzo kila siku. Chagua kifurushi kinachokufaa.</p>
+<div class="plans">
+<div class="plan"><h3>Fursa Iliyodhaminiwa</h3><div class="price">TSh 30,000 <small>/ wiki 2</small></div><ul><li>Fursa yako juu ya orodha</li><li>Alama ya Imedhaminiwa</li></ul></div>
+<div class="plan top"><h3>Fursa ya Mwezi</h3><div class="price">TSh 80,000 <small>/ mwezi</small></div><ul><li>Nafasi ya juu kwa mwezi mzima</li><li>Maelezo kamili ya fursa</li><li>Tunaishiriki kwenye WhatsApp</li></ul></div>
+<div class="plan"><h3>Mdhamini Mkuu</h3><div class="price">TSh 150,000 <small>/ mwezi</small></div><ul><li>Nembo yako juu ya website</li><li>Fursa 2 zilizodhaminiwa</li></ul></div>
+<div class="plan"><h3>Kifurushi cha Taasisi</h3><div class="price">TSh 350,000 <small>/ miezi 3</small></div><ul><li>Fursa 3 zilizodhaminiwa</li><li>Nembo yako kwa miezi 3</li><li>Punguzo la kifurushi</li></ul></div>
+</div>
+<p class="meta">Bei za uzinduzi, zinajadilika. Taasisi za vijana zisizo za faida zinapata punguzo. Hatutangaza fursa zinazowatoza waombaji ada.</p>
+<div class="contact">
+<a class="cbtn wa" href="https://wa.me/255783230597?text=Habari%2C%20ninataka%20kutangaza%20kwenye%20Kijana%20Fursa" target="_blank" rel="noopener">WhatsApp: 0783 230 597</a>
+<a class="cbtn ph" href="tel:+255770230593">Piga: 0770 230 593</a>
+<a class="cbtn ph" href="tel:+255766240593">Piga: 0766 240 593</a>
+<a class="cbtn ph" href="mailto:eliakimunyajilali@gmail.com?subject=Kutangaza%20Kijana%20Fursa">Barua pepe</a>
+</div>
+</section>
+
 <section class="submit" id="tuma">
 <h2>Una fursa ya kushiriki?</h2>
 <p class="meta">Tuma fursa unayoijua. Tutahakiki chanzo chake kabla ya kuichapisha.</p>
@@ -90,6 +137,7 @@ footer{padding:8px 0 40px;color:var(--muted);font-size:.88rem}
 <footer>Kijana Fursa: toleo la mfano. Fursa zinazoonyeshwa ni za majaribio. Wasiliana nasi: <a href="mailto:eliakimunyajilali@gmail.com">eliakimunyajilali@gmail.com</a></footer>
 </div>
 
+<a class="fab" href="https://wa.me/255783230597" target="_blank" rel="noopener">WhatsApp</a>
 <script>
 var OPPS=[
 {id:1,t:"Mikopo ya Elimu ya Juu",src:"HESLB",cat:"Masomo",reg:"Nchi nzima",d:"2026-12-20",desc:"Mkopo kwa wanafunzi wanaojiunga na vyuo vikuu. Hitaji: cheti cha kuzaliwa, matokeo ya kidato cha sita na barua ya udahili."},
@@ -132,7 +180,7 @@ if(!list.length){$("list").innerHTML='<div class="empty">'+(tab==="saved"?"Bado 
 $("list").innerHTML=list.map(function(o){var s=saved.indexOf(o.id)>=0;
 return '<article class="card"><h3>'+o.t+'</h3><p class="meta"><span class="tag">'+o.cat+'</span><span class="tag">'+o.reg+'</span>'+o.src+'</p>'+dl(o.d)+
 '<details><summary>Maelezo na jinsi ya kuomba</summary><p>'+o.desc+'</p><p class="meta">Mfano wa majaribio. Thibitisha kwenye chanzo rasmi kabla ya kuomba, na usilipe pesa.</p></details>'+
-'<button class="save" data-id="'+o.id+'" aria-pressed="'+s+'">'+(s?"Imehifadhiwa":"Hifadhi")+'</button></article>'}).join("")}
+'<button class="save" data-id="'+o.id+'" aria-pressed="'+s+'">'+(s?"Imehifadhiwa":"Hifadhi")+'</button><a class="share" target="_blank" rel="noopener" href="https://wa.me/?text='+encodeURIComponent(o.t+" - Kijana Fursa "+location.href.split("#")[0])+'">Shiriki</a></article>'}).join("")}
 $("chips").addEventListener("click",function(e){var c=e.target.getAttribute("data-c");if(c){cat=c;chips();render()}});
 $("list").addEventListener("click",function(e){var id=+e.target.getAttribute("data-id");if(!id)return;var i=saved.indexOf(id);if(i>=0)saved.splice(i,1);else saved.push(id);persist();render()});
 $("q").addEventListener("input",render);$("reg").addEventListener("change",render);
@@ -142,7 +190,15 @@ $("send").onclick=function(){if(!$("f-t").value.trim()||!$("f-s").value.trim()){
 var body="Jina la fursa: "+$("f-t").value.trim()+"\nChanzo rasmi: "+$("f-s").value.trim()+"\nMaelezo: "+$("f-d").value.trim();
 var href="mailto:eliakimunyajilali@gmail.com?subject="+encodeURIComponent("Fursa mpya: "+$("f-t").value.trim())+"&body="+encodeURIComponent(body);
 $("msg").style.color="var(--ok)";$("msg").innerHTML='Tayari. <a href="'+href+'" target="_blank" rel="noopener">Bonyeza hapa kutuma kwa barua pepe</a>'};
-chips();render();
+var SHEET_URL="";
+function esc(s){return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
+function csv(t){var r=[],row=[],c="",q=false,i,ch;for(i=0;i<t.length;i++){ch=t[i];if(q){if(ch=='"'){if(t[i+1]=='"'){c+='"';i++}else q=false}else c+=ch}else if(ch=='"')q=true;else if(ch==","){row.push(c);c=""}else if(ch=="\n"){row.push(c);r.push(row);row=[];c=""}else if(ch!="\r")c+=ch}if(c||row.length){row.push(c);r.push(row)}return r}
+function buildRegs(){var rs=["Mikoa yote"].concat(Array.from(new Set(OPPS.map(function(o){return o.reg}))).sort());$("reg").innerHTML=rs.map(function(r){return "<option>"+r+"</option>"}).join("")}
+function load(){if(!SHEET_URL)return;fetch(SHEET_URL).then(function(x){return x.text()}).then(function(t){var rows=csv(t).slice(1).filter(function(r){return r[1]&&r[5]});if(!rows.length)return;OPPS=rows.map(function(r,i){return{id:+r[0]||i+1,t:esc(r[1]),src:esc(r[2]),cat:esc(r[3]),reg:esc(r[4]||"Nchi nzima"),d:esc(r[5].trim()),desc:esc(r[6])}});buildRegs();render()}).catch(function(){})}
+var dp;window.addEventListener("beforeinstallprompt",function(e){e.preventDefault();dp=e;$("inst").hidden=false});
+$("inst").onclick=function(e){e.preventDefault();if(dp){dp.prompt();dp=null;$("inst").hidden=true}};
+if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js").catch(function(){});
+chips();render();load();
 </script>
 </body>
 </html>
